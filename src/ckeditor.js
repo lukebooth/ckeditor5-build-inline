@@ -29,6 +29,8 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
+import LinkTo from './plugins/linkto';
+
 export default class InlineEditor extends InlineEditorBase {}
 
 // Plugins to include in the build.
@@ -49,6 +51,7 @@ InlineEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	Link,
+	LinkTo,
 	List,
 	MediaEmbed,
 	Paragraph,
@@ -68,6 +71,7 @@ InlineEditor.defaultConfig = {
 			'strikethrough',
 			'|',
 			'link',
+			'linkto',
 			'bulletedList',
 			'numberedList',
 			'imageUpload',
